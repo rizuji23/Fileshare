@@ -1,0 +1,216 @@
+body {
+    background: #212529;
+}
+
+p {
+    color: white;
+}
+
+label {
+    color: white;
+}
+
+h1 {
+    color: white;
+}
+
+.footer-copyright {
+    color: white;
+}
+
+h2 {
+    color: white;
+}
+
+.jumbotron {
+    background-color: #212529 !important;
+    word-wrap: break-word !important;
+}
+
+.box-table {
+    width: 200px;
+    height: 100%;
+    padding-top: 9px;
+    padding-left: 9px;
+    padding-right: 9px;
+    padding-bottom: 9px;
+    margin-bottom: 20px;
+    background: #343A40;
+    text-align: center;
+    border-radius: 10px;
+    word-wrap: break-word;
+    display: inline-block;
+    justify-content: center;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.progress {
+    display: none;
+    position: relative;
+    width: 400px;
+    border: 1px solid #343A40;
+    height: 34px;
+    border-radius: 3px;
+    margin-top: 20px;
+    padding-top: 1px;
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-bottom: 1px;
+}
+
+.bar {
+    background-color: #343A40;
+    width: 0%;
+    height: 30px;
+    border-radius: 3px;
+}
+
+
+
+.percent {
+    position: absolute;
+    display: inline-block;
+    top: 5px;
+    left: 48%;
+    color: #818181;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+
+.a-lihat {
+    text-decoration: none !important;
+    color: #fff !important;
+}
+
+.box-container {}
+
+.box-table:hover {
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.main-head {
+    height: 150px;
+    background: #FFF;
+
+}
+
+.sidenav {
+    height: 100%;
+    background-color: #343A40;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+
+.main {
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .login-form {
+        margin-top: 10%;
+    }
+
+    .register-form {
+        margin-top: 10%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .main {
+        margin-left: 40%;
+    }
+
+    .sidenav {
+        width: 40%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+    }
+
+    .login-form {
+        margin-top: 80%;
+    }
+
+    .register-form {
+        margin-top: 20%;
+    }
+}
+
+
+.login-main-text {
+    margin-top: 20%;
+    padding: 60px;
+    color: #fff;
+}
+
+.login-main-text h2 {
+    font-weight: 300;
+}
+
+.btn-black {
+    background-color: #000 !important;
+    color: #fff;
+}
+
+
+
