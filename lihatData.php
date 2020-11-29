@@ -42,6 +42,7 @@ if (empty($_SESSION['username'])) {
     </div>
 
 
+<<<<<<< HEAD
     <div class="clickmenu">
           <ul class="items">
             <li id="buatfolder">Buat Folder Baru</li>
@@ -74,6 +75,9 @@ if (empty($_SESSION['username'])) {
       
 
 
+=======
+    <div class="jumbotron">
+>>>>>>> bbb9169f4352ac7ff7d4659c6e2fe6fa8bb19b95
       <?php
 
       $dir2 = "uploads_files/";
@@ -81,14 +85,21 @@ if (empty($_SESSION['username'])) {
 
 
       ?>
+<<<<<<< HEAD
       <div class="divtable">
      
+=======
+>>>>>>> bbb9169f4352ac7ff7d4659c6e2fe6fa8bb19b95
       <form method="get">
         <?php foreach (glob($dir2 . '*', GLOB_ONLYDIR) as $dirs) {
           $dirs = str_replace($dir2, '', $dirs);
         ?>
 
+<<<<<<< HEAD
           <a class="a-lihat" href='lihatData.php?dir_select=<?php echo $dirs; ?>#boxLihat'>
+=======
+          <a class="a-lihat" href='lihatData.php?dir_select=<?php echo $dirs; ?>'>
+>>>>>>> bbb9169f4352ac7ff7d4659c6e2fe6fa8bb19b95
             <div class="box-table">
               <img width="100" src="assets/img/<?php echo "folder.png" ?>" alt="">
               <div class="content"><?php echo $dirs; ?>
@@ -98,7 +109,10 @@ if (empty($_SESSION['username'])) {
           </a>
         <?php } ?>
       </form>
+<<<<<<< HEAD
       </div>
+=======
+>>>>>>> bbb9169f4352ac7ff7d4659c6e2fe6fa8bb19b95
 
       <div class="text-center" id="boxLihat">
         <?php
@@ -137,11 +151,19 @@ if (empty($_SESSION['username'])) {
                 ?>
 
                   <a class="a-lihat" href='preview.php?file=<?php echo "uploads_files/$dir3/$file" ?>'>
+<<<<<<< HEAD
                     <div class="boxcontext justify-content-between">
                       <img width="100" src="<?php echo "uploads_files/$dir3/$file" ?>" alt="">
                       <div class="content"> <?php echo $file; ?>
                       </div>
                       <a href="hapus.php?id=<?php echo "uploads_files/$dir3/$file" ?>&id2=<?php echo "$dir3" ?>&file=<?php echo $file ?>" class="hapuss hapus" style="color: #FB613E;">Hapus</a>
+=======
+                    <div class="box-table justify-content-between">
+                      <img width="100" src="<?php echo "uploads_files/$dir3/$file" ?>" alt="">
+                      <div class="content"> <?php echo $file; ?>
+                      </div>
+                      <a href="hapus.php?id=<?php echo "uploads_files/$dir3/$file" ?>&id2=<?php echo "$dir3" ?>" class="hapuss" style="color: #FB613E;">Hapus</a>
+>>>>>>> bbb9169f4352ac7ff7d4659c6e2fe6fa8bb19b95
                     </div>
 
                   </a>
@@ -152,12 +174,21 @@ if (empty($_SESSION['username'])) {
 
                 ?>
                   <a class="a-lihat" href='preview.php?file=<?php echo "uploads_files/$dir3/$file" ?>'>
+<<<<<<< HEAD
                     <div class="boxcontext videos">
                       <video width="160" height="190" class="video-pre" src="<?php echo "uploads_files/$dir3/$file"; ?>" muted poster="assets/img/iconvideo.png">
                       </video>
                       <div class="content"> <?php echo $file; ?>
                       </div>
                       <a href="hapus.php?id=<?php echo "uploads_files/$dir3/$file" ?>&id2=<?php echo "$dir3" ?>&file=<?php echo $file ?>" class="hapus" style="color: #FB613E;">Hapus</a>
+=======
+                    <div class="box-table">
+                      <video width="160" height="190" class="video-pre" src="<?php echo "uploads_files/$dir3/$file"; ?>" autoplay loop muted poster="ac.jpg">
+                      </video>
+                      <div class="content"> <?php echo $file; ?>
+                      </div>
+                      <a href="hapus.php?id=<?php echo "uploads_files/$dir3/$file" ?>&id2=<?php echo "$dir3" ?>" class="hapus" style="color: #FB613E;">Hapus</a>
+>>>>>>> bbb9169f4352ac7ff7d4659c6e2fe6fa8bb19b95
                     </div>
                   </a>
 
@@ -165,22 +196,38 @@ if (empty($_SESSION['username'])) {
                 ?>
 
                   <a class="a-lihat" href='preview.php?file=<?php echo "uploads_files/$dir3/$file" ?>'>
+<<<<<<< HEAD
                     <div class="boxcontext">
                       <img width="100" src="assets/img/<?php echo "dokumen.png" ?>" alt="">
                       <div class="content"> <?php echo $file; ?>
                       </div>
                       <a href="hapus.php?id=<?php echo "uploads_files/$dir3/$file" ?>&id2=<?php echo "$dir3" ?>&file=<?php echo $file ?>" class="hapus" style="color: #FB613E;">Hapus</a>
+=======
+                    <div class="box-table">
+                      <img width="100" src="assets/img/<?php echo "dokumen.png" ?>" alt="">
+                      <div class="content"> <?php echo $file; ?>
+                      </div>
+                      <a href="hapus.php?id=<?php echo "uploads_files/$dir3/$file" ?>&id2=<?php echo "$dir3" ?>" class="hapus" style="color: #FB613E;">Hapus</a>
+>>>>>>> bbb9169f4352ac7ff7d4659c6e2fe6fa8bb19b95
                     </div>
                   </a>
                 <?php } elseif (in_array($info['extension'], $extensions_pack)) {
                 ?>
 
                   <a class="a-lihat" href='preview.php?file=<?php echo "uploads_files/$dir3/$file" ?>'>
+<<<<<<< HEAD
                     <div class="boxcontext">
                       <img width="100" src="assets/img/<?php echo "pack.png" ?>" alt="">
                       <div class="content"> <?php echo $file; ?>
                       </div>
                       <a href="hapus.php?id=<?php echo "uploads_files/$dir3/$file" ?>&id2=<?php echo "$dir3" ?>&file=<?php echo $file ?>" class="hapus" style="color: #FB613E;">Hapus</a>
+=======
+                    <div class="box-table">
+                      <img width="100" src="assets/img/<?php echo "pack.png" ?>" alt="">
+                      <div class="content"> <?php echo $file; ?>
+                      </div>
+                      <a href="hapus.php?id=<?php echo "uploads_files/$dir3/$file" ?>&id2=<?php echo "$dir3" ?>" class="hapus" style="color: #FB613E;">Hapus</a>
+>>>>>>> bbb9169f4352ac7ff7d4659c6e2fe6fa8bb19b95
                     </div>
                   </a>
                 <?php
@@ -188,16 +235,25 @@ if (empty($_SESSION['username'])) {
                 ?>
 
                   <a class="a-lihat" href='preview.php?file=<?php echo "uploads_files/$dir3/$file" ?>'>
+<<<<<<< HEAD
                     <div class="boxcontext">
                       <img width="100" src="assets/img/<?php echo "music.png" ?>" alt="">
                       <div class="content" id="namaFile"> <?php echo $file; ?>
                       </div>
                       <a href="hapus.php?id=<?php echo "uploads_files/$dir3/$file" ?>&id2=<?php echo "$dir3" ?>&file=<?php echo $file ?>" class="hapus" style="color: #FB613E;">Hapus</a>
+=======
+                    <div class="box-table">
+                      <img width="100" src="assets/img/<?php echo "music.png" ?>" alt="">
+                      <div class="content" id="namaFile"> <?php echo $file; ?>
+                      </div>
+                      <a href="hapus.php?id=<?php echo "uploads_files/$dir3/$file" ?>&id2=<?php echo "$dir3" ?>" class="hapus" style="color: #FB613E;">Hapus</a>
+>>>>>>> bbb9169f4352ac7ff7d4659c6e2fe6fa8bb19b95
                     </div>
                   </a>
 
                 <?php } else { ?>
                   <?php if ($file == '.' or $file == '..') { ?>
+<<<<<<< HEAD
                     
                   <?php } else {  ?>
 
@@ -207,6 +263,17 @@ if (empty($_SESSION['username'])) {
                         <div class="content" id="namaFile"> <?php echo $file; ?>
                         </div>
                         <a href="hapus.php?id=<?php echo "uploads_files/$dir3/$file" ?>&id2=<?php echo "$dir3" ?>&file=<?php echo $file ?>" class="hapus" style="color: #FB613E;">Hapus</a>
+=======
+                    continue;
+                  <?php } else {  ?>
+
+                    <a class="a-lihat" href='preview.php?file=<?php echo "uploads_files/$dir3/$file" ?>'>
+                      <div class="box-table">
+                        <img width="100" src="assets/img/<?php echo "custom.png" ?>" alt="">
+                        <div class="content" id="namaFile"> <?php echo $file; ?>
+                        </div>
+                        <a href="hapus.php?id=<?php echo "uploads_files/$dir3/$file" ?>&id2=<?php echo "$dir3" ?>" class="hapus" style="color: #FB613E;">Hapus</a>
+>>>>>>> bbb9169f4352ac7ff7d4659c6e2fe6fa8bb19b95
                       </div>
                     </a>
 
@@ -229,6 +296,7 @@ if (empty($_SESSION['username'])) {
         <a href="#"> Rizki Fauzi</a>
       </div>
     </footer>
+<<<<<<< HEAD
 
     <div class="modal fade" id="buatfoldermodals" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
@@ -255,6 +323,8 @@ if (empty($_SESSION['username'])) {
   </div>
 </div>
 
+=======
+>>>>>>> bbb9169f4352ac7ff7d4659c6e2fe6fa8bb19b95
     <script src="assets/js/jquery-3.4.1.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/sweetalert2.all.min.js"></script>
@@ -277,9 +347,12 @@ if (empty($_SESSION['username'])) {
       }
     </script>
     <script>
+<<<<<<< HEAD
       
     </script>
     <script>
+=======
+>>>>>>> bbb9169f4352ac7ff7d4659c6e2fe6fa8bb19b95
       jQuery(document).ready(function($) {
         $('.hapus').on('click', function() {
           var getlink = $(this).attr('href');
@@ -298,6 +371,7 @@ if (empty($_SESSION['username'])) {
           return false;
         });
       });
+<<<<<<< HEAD
 
       var figure = $('.videos').hover(hoverVideo, hideVideo);
 
@@ -447,6 +521,30 @@ if (empty($_SESSION['username'])) {
 
     </script>
 </body>
+=======
+    </script>
+    <script>
+      jQuery(document).ready(function($) {
+        $('.hapus').on('click', function() {
+          var getlink = $(this).attr('href');
+          Swal.fire({
+            title: 'Apakah Ingin Dihapus?',
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Iya'
+          }).then((result) => {
+            if (result.value) {
+              window.location = getlink;
+            }
+          });
+          return false;
+        });
+      });
+    </script>
+  </body>
+>>>>>>> bbb9169f4352ac7ff7d4659c6e2fe6fa8bb19b95
 
   </html>
 <?php } ?>

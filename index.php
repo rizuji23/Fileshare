@@ -76,7 +76,11 @@ if ($_SESSION['username']) {
                   <input type="password" name="password" class="form-control" placeholder="Password">
                </div>
                <button type="submit" name="login" class="btn btn-primary">Login</button>
+<<<<<<< HEAD
                <!-- <button type="submit" name="daftar" class="btn btn-info">Daftar Akun Baru</button> -->
+=======
+               <button type="submit" name="daftar" class="btn btn-info">Daftar Akun Baru</button>
+>>>>>>> bbb9169f4352ac7ff7d4659c6e2fe6fa8bb19b95
             </form>
          </div>
       </div>

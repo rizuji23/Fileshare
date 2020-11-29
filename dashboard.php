@@ -41,9 +41,12 @@ if (empty($_SESSION['username'])) {
       <p class="lead">
         <a class="btn btn-primary btn-lg" href="tambahData.php" role="button">Tambah File Atau Folder</a>
       </p>
+<<<<<<< HEAD
       <p class="lead">
         <a class="btn btn-info btn-lg" href="statistik.php" role="button">Stastistik Data Upload</a>
       </p>
+=======
+>>>>>>> bbb9169f4352ac7ff7d4659c6e2fe6fa8bb19b95
     </div>
 
 

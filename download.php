@@ -53,10 +53,13 @@ $file = $_GET['file'];
 
     <script src="assets/js/jquery-3.4.1.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+<<<<<<< HEAD
    
     <script>
     
     </script>
+=======
+>>>>>>> bbb9169f4352ac7ff7d4659c6e2fe6fa8bb19b95
   </body>
 
   </html>

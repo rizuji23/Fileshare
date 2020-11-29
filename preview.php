@@ -17,6 +17,10 @@ if (empty($file)) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
     <title>FileShare | Preview</title>
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<<<<<<< HEAD
+=======
+
+>>>>>>> bbb9169f4352ac7ff7d4659c6e2fe6fa8bb19b95
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
 
@@ -65,7 +69,11 @@ if (empty($file)) {
 
       ?>
         <div class="embed-responsive embed-responsive-16by9" align="center">
+<<<<<<< HEAD
           <video id="video" controlsList="nodownload"  controls src="<?php echo $file; ?>" autoplay poster="ac.jpg">
+=======
+          <video controls src="<?php echo $file; ?>" autoplay poster="ac.jpg">
+>>>>>>> bbb9169f4352ac7ff7d4659c6e2fe6fa8bb19b95
           </video>
         </div>
 
@@ -98,6 +106,10 @@ if (empty($file)) {
 
     <script src="assets/js/jquery-3.4.1.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+<<<<<<< HEAD
+=======
+    
+>>>>>>> bbb9169f4352ac7ff7d4659c6e2fe6fa8bb19b95
   </body>
 
   </html>
